@@ -1,0 +1,78 @@
+@charset "utf-8";
+/*CSSで全体サイズなど決める*/
+@font-face {
+  font-family: 'Shippori Mincho B1', serif;
+  src: url('font/ShipporiMinchoB1-Bold.ttf') format('ttf');
+}
+.myfont {
+  font-family: 'Shippori Mincho B1', serif;
+}
+body {
+  margin: 0;
+}
+#bg {
+  margin: 0;	
+  height: 720px;
+  width: 100%;
+min-height: 100vh;
+/*	max-width: 1200px;*/
+  place-items: center;
+  background-image: url("images/bg_pattern.png");
+background-position: center x;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+#site-box {
+  width: 100%;
+  height: 720px;
+  background-image: url("images/bg.png");
+  background-size: cover;
+  text-align: right;
+  vertical-align: top;
+	margin: auto;
+	display: inline-block;
+	min-width: 1080px;
+		max-width: 1200px;
+	max-height: 720px;
+	background-repeat: no-repeat;	
+background-position: center center;
+}
+.vertical {
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  text-align: left;
+  display: inline-block;
+  position: relative;
+  top: 12vh;
+  right: 8vw;
+}
+.vertical p {
+  font-size: 1rem;
+  line-height: 2rem;
+  letter-spacing:0.4rem;
+}
+.vertical p a{
+  text-decoration: none;
+}
+.vertical .link-bk{
+	width:auto;
+		  background-image: url(images/link-bk.png);
+	background-size:auto 28vh;
+  background-repeat: no-repeat;	
+  background-position: 0px 15vh;
+  padding-top: 18vh;
+}
+
+.vertical .link-bk p a{
+	color: black;
+}
+
+/*
+指定はポジションを使う/下記URLを参照する
+https://saruwakakun.com/html-css/basic/relative-absolute-fixed
+*/
+.under-top {
+  padding: 60% 46%;
+}
