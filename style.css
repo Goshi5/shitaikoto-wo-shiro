@@ -45,7 +45,7 @@ body {
   text-align: left;
   display: inline-block;
   position: relative;
-  top: 16vh;
+  top: 20vh;
   right: 8vw;
 }
 .vertical p {
@@ -57,7 +57,7 @@ body {
   text-decoration: none;
 }
 .vertical .link-bk {
-	margin-right: 10vw;
+	margin-right: 20vw;
 	width: 225px;
 	height: auto;
   background-image: url(images/link-bk.png);
