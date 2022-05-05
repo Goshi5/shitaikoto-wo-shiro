@@ -33,22 +33,24 @@ body {
   margin: auto;
   display: inline-block;
   min-width: 1080px;
-  max-width: 1200px;
+  max-width: 1080px;
   max-height: 720px;
   background-repeat: no-repeat;
   background-position: center center;
+
 }
 .vertical {
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
   text-orientation: upright;
-  text-align: left;
   display: inline-block;
   position: relative;
-  top: 16vh;
-  right: 8vw;
+  top: 120px;
+  right: 7%;
+	margin: 0 auto;
 }
 .vertical p {
+  text-align: left;	
   font-size: 1rem;
   line-height: 2rem;
   letter-spacing: 0.4rem;
@@ -62,14 +64,21 @@ body {
 	height: auto;
   background-image: url(images/link-bk.png);
   background-size: auto;
-  background-position: 10px 15vh;
+  background-position: 10px 85px;
 	background-repeat: no-repeat;
-  padding-top: 21vh;
+
 }
 
 
 .vertical .link-bk p.myfont a {
   color: black;
+  padding-top: 130px;	
+}
+
+.vertical .title-img {
+	position: absolute;
+	top:360px;
+	left: 1vw;
 }
 /*
 指定はポジションを使う/下記URLを参照する
