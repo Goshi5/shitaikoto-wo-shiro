@@ -4,8 +4,17 @@
   font-family: 'Shippori Mincho B1', serif;
   src: url('font/ShipporiMinchoB1-Bold.ttf') format('ttf');
 }
+.titlefont{
+ font-family: 'Lato', sans-serif;
+	font-weight: 100;
+	color: white;
+	background-color: black;
+	padding: 0 8px;
+	border-radius: 5px;
+}
 .myfont {
   font-family: 'Shippori Mincho B1', serif;
+	font-weight: 600;	
 }
 body {
   margin: 0;
@@ -46,7 +55,7 @@ body {
   top: 120px;
   right: 7%;
   margin: 0 auto;
-	height: 522px;
+	height: 510px;
 }
 .vertical .am24{
 	writing-mode: horizontal-tb;
@@ -61,7 +70,7 @@ body {
   text-align: left;
   font-size: 1rem;
   line-height: 2rem;
-  letter-spacing: 0.4rem;
+  letter-spacing: 0.4rem;	
 }
 .vertical p a {
   text-decoration: none;
@@ -165,12 +174,15 @@ background-color: black;
 	-ms-text-combine-horizontal: all;
 	-webkit-text-combine: horizontal;
 	text-combine-upright: all;
-	letter-spacing: normal!important;
-	margin-bottom: 6px;
+	position: absolute;
+	right: 18px;
 }
 .PQ:hover{
 	color: white;
 	background-color: black;
+}
+.R{
+	margin-top: 1.4rem;
 }
 .R:hover{
 	color: white;
