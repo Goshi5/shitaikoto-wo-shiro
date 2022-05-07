@@ -35,10 +35,40 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+<script type="text/javascript" src="am24.js"></script>		
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script type="text/javascript" src="am24.js"></script>	
+<script>
+	$(function () {
+  var webStorage = function () {
+    if (sessionStorage.getItem('access')) {
+      /*
+        2回目以降アクセス時の処理
+      */
+      $(".loading").addClass('is-active');
+    } else {
+      /*
+        初回アクセス時の処理
+      */
+      sessionStorage.setItem('access', 'true'); // sessionStorageにデータを保存
+      $(".loading-animation").addClass('is-active'); // loadingアニメーションを表示
+      setTimeout(function () {
+        // ローディングを数秒後に非表示にする
+        $(".loading").addClass('is-active');
+        $(".loading-animation").removeClass('is-active');
+      }, 3000); // ローディングを表示する時間
+    }
+  }
+  webStorage();
+});
+</script>
+	
 </head>
 <body>
+<!--ローディングアニメーション-->	
+	<div class="loading">
+  <div class="loading-animation"> <img src="https://web-creates.com/wp/wp-content/uploads/2021/06/logo.png" alt="ロゴ"> </div>
+</div>
+<!--ローディングアニメーション-->	
 <div id="bg">
   <div id="site-box">
     <div class="vertical">
