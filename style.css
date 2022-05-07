@@ -115,7 +115,7 @@ body {
   text-decoration: none;
 }
 .vertical .link-bk {
-  margin-right: 4vw;
+  margin-right: 50px;
   width: 225px;
   height: auto;
   background-image: url(images/link-bk.png);
@@ -135,7 +135,7 @@ background-size: 105%;
 .vertical .title-img {
   position: absolute;
   top: 360px;
-  left: 1vw;
+  left: 9px;
 transition: all 0.5s ease-in;
 }
 .vertical .title-img:hover{
