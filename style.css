@@ -15,7 +15,7 @@ body {
   height: 720px;
   width: 100%;
   min-height: 100vh;
-  /*	max-width: 1200px;*/
+  /*max-width: 1200px;*/
   place-items: center;
   background-image: url("images/bg_pattern.png");
   background-position: center x;
@@ -52,13 +52,13 @@ body {
   font-size: 1rem;
   line-height: 2rem;
   letter-spacing: 0.4rem;
-	/*1字ずつ表示実験失敗
-	width: 3.4rem;
-	white-space: nowrap;
-	overflow: hidden;
-	border-right: 1px solid rgba(255,255,255,.5);
-	animation: typing 1.5s steps(266),blink .5s steps(1) infinite alternate;
-	*/
+/*1字ずつ表示実験失敗
+width: 3.4rem;
+white-space: nowrap;
+overflow: hidden;
+border-right: 1px solid rgba(255,255,255,.5);
+animation: typing 1.5s steps(266),blink .5s steps(1) infinite alternate;
+*/
 }
 .vertical p a {
   text-decoration: none;
@@ -77,20 +77,114 @@ body {
   margin-top: 130px;
 }
 .vertical .link-bk p.myfont a:hover{
-	background: #FFFFFF;
-	background-size: 105%;
+background: #FFFFFF;
+background-size: 105%;
 
 }
 .vertical .title-img {
   position: absolute;
   top: 360px;
   left: 1vw;
-	transition: all 0.5s ease-in;
+transition: all 0.5s ease-in;
 }
 .vertical .title-img:hover{
-	filter: brightness(110%);
-	transform: scale(1.05);
+filter: brightness(110%);
+transform: scale(1.05);
 }
 .under-top {
   padding: 60% 46%;
 }
+.A:hover{
+color: white;
+background-color: black;
+}
+.B:hover{
+color: white;
+background-color: black;
+}
+.C:hover{
+	color: white;
+	backgound-color: black;
+}
+.D:hover{
+	color: white;
+	backgound-color: black;
+}
+.E:hover{
+	color: white;
+	backgound-color: black;
+}
+.F:hover{
+	color: white;
+	backgound-color: black;
+}
+.G:hover{
+	color: white;
+	backgound-color: black;
+}
+.H:hover{
+	color: white;
+	backgound-color: black;
+}
+.I:hover{
+	color: white;
+	backgound-color: black;
+}
+.J:hover{
+	color: white;
+	backgound-color: black;
+}
+.K:hover{
+	color: white;
+	backgound-color: black;
+}
+.L:hover{
+	color: white;
+	backgound-color: black;
+}
+.M:hover{
+	color: white;
+	backgound-color: black;
+}
+.N:hover{
+	color: white;
+	backgound-color: black;
+}
+.O:hover{
+	color: white;
+	backgound-color: black;
+}
+.P:hover{
+	color: white;
+	backgound-color: black;
+}
+.Q:hover{
+	color: white;
+	backgound-color: black;
+}
+.R:hover{
+	color: white;
+	backgound-color: black;
+}
+.S:hover{
+	color: white;
+	backgound-color: black;
+}
+.T:hover{
+	color: white;
+	backgound-color: black;
+}
+.U:hover{
+	color: white;
+	backgound-color: black;
+}
+.V:hover{
+	color: white;
+	backgound-color: black;
+}
+.W:hover{
+	color: white;
+	backgound-color: black;
+}
+
+
