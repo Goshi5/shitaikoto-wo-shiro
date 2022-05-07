@@ -58,6 +58,7 @@ body {
 	height: 510px;
 }
 .vertical .am24{
+	display: none;
 	writing-mode: horizontal-tb;
 	text-orientation: mixed;
 	  position: relative;
