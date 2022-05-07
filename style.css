@@ -37,7 +37,7 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
 }
-.vertical {
+.vertical:not(.am24) {
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
   text-orientation: upright;
@@ -46,19 +46,22 @@ body {
   top: 120px;
   right: 7%;
   margin: 0 auto;
+	height: 518px;
 }
+.vertical .am24{
+	writing-mode: horizontal-tb;
+	text-orientation: mixed;
+	  position: relative;
+	float: right;
+	right: 375px;
+	font-size: 2.5rem;
+}
+
 .vertical p {
   text-align: left;
   font-size: 1rem;
   line-height: 2rem;
   letter-spacing: 0.4rem;
-/*1字ずつ表示実験失敗
-width: 3.4rem;
-white-space: nowrap;
-overflow: hidden;
-border-right: 1px solid rgba(255,255,255,.5);
-animation: typing 1.5s steps(266),blink .5s steps(1) infinite alternate;
-*/
 }
 .vertical p a {
   text-decoration: none;
@@ -101,6 +104,10 @@ background-color: black;
 .B:hover{
 color: white;
 background-color: black;
+}
+
+.C{
+	letter-spacing: 0.1rem!important;
 }
 .C:hover{
 	color: white;
@@ -154,11 +161,14 @@ background-color: black;
 	color: white;
 	background-color: black;
 }
-.P:hover{
-	color: white;
-	background-color: black;
+.PQ{
+	-ms-text-combine-horizontal: all;
+	-webkit-text-combine: horizontal;
+	text-combine-upright: all;
+	letter-spacing: normal!important;
+	margin-bottom: 6px;
 }
-.Q:hover{
+.PQ:hover{
 	color: white;
 	background-color: black;
 }
@@ -177,6 +187,9 @@ background-color: black;
 .U:hover{
 	color: white;
 	background-color: black;
+}
+.V{
+	letter-spacing: 0.1rem!important;	
 }
 .V:hover{
 	color: white;
