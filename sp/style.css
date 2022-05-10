@@ -5,7 +5,7 @@
 }
 #contents .top{
     height: 600px;
-    background-image: url(/sp/images/top.png);
+    background-image: url(images/top.png);
     background-repeat: no-repeat;
     background-size: 360px 600px;
 }
@@ -21,7 +21,7 @@
 }
 #contents .member{
     height: 600px;
-    background-image: url(/sp/images/member.png);
+    background-image: url(images/member.png);
     background-repeat: no-repeat;
     background-size: 360px 600px;
 }
@@ -37,7 +37,7 @@
 }
 #contents .novels{
     height: 600px;
-    background-image: url(/sp/images/novels.png);
+    background-image: url(images/novels.png);
     background-repeat: no-repeat;
     background-size: 360px 600px;
 }
@@ -53,7 +53,7 @@
 }
 #contents .products{
     height: 600px;
-    background-image: url(/sp/images/products.png);
+    background-image: url(images/products.png);
     background-repeat: no-repeat;
     background-size: 360px 600px;
 }
@@ -69,7 +69,7 @@
 }
 #contents .contacts{
     height: 600px;
-    background-image: url(/sp/images/contacts.png);
+    background-image: url(images/contacts.png);
     background-repeat: no-repeat;
     background-size: 360px 600px;    
 }
