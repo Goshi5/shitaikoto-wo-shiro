@@ -1,0 +1,85 @@
+#contents{
+    height: auto;
+    width: 380px;
+    margin: 0 auto;
+}
+#contents .top{
+    height: 600px;
+    background-image: url(images/top.png);
+    background-repeat: no-repeat;
+    background-size: 360px 600px;
+}
+#contents .top p.inside{
+    position: relative;
+    top: 280px;
+    left: 80px;
+}
+#contents .top p.outside{
+    position: relative;
+    top: 460px;
+    left: 40px;
+}
+#contents .member{
+    height: 600px;
+    background-image: url(images/member.png);
+    background-repeat: no-repeat;
+    background-size: 360px 600px;
+}
+#contents .member p.inside{
+    position: relative;
+    top: 280px;
+    left: 80px;
+}
+#contents .member p.outside{
+    position: relative;
+    top: 460px;
+    left: 40px;
+}
+#contents .novels{
+    height: 600px;
+    background-image: url(images/novels.png);
+    background-repeat: no-repeat;
+    background-size: 360px 600px;
+}
+#contents .novels p.inside{
+    position: relative;
+    top: 280px;
+    left: 80px;
+}
+#contents .novels p.outside{
+    position: relative;
+    top: 460px;
+    left: 40px;
+}
+#contents .products{
+    height: 600px;
+    background-image: url(images/products.png);
+    background-repeat: no-repeat;
+    background-size: 360px 600px;
+}
+#contents .products p.inside{
+    position: relative;
+    top: 280px;
+    left: 80px;
+}
+#contents .products p.outside{
+    position: relative;
+    top: 460px;
+    left: 40px;
+}
+#contents .contacts{
+    height: 600px;
+    background-image: url(images/contacts.png);
+    background-repeat: no-repeat;
+    background-size: 360px 600px;    
+}
+#contents .contacts p.inside{
+    position: relative;
+    top: 280px;
+    left: 80px;
+}
+#contents .contacts p.outside{
+    position: relative;
+    top: 460px;
+    left: 40px;
+}

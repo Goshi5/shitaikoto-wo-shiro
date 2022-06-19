@@ -1,8 +1,10 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
 <!--検索で表示されない-->
 <meta name="robots" content="noindex,nofollow">
 <!--検索で表示されない-->
@@ -30,20 +32,232 @@
 <!-- ファビコンと同じでOK-->
 <link rel="apple-touch-icon" href="./assets/apple-touch-icon.png" sizes="180x180">
 <!-- ファビコンと同じでOK-->
-<link href="style.css" rel="stylesheet" type="text/css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+<script src="am24-sp.js"></script>
+<link rel="stylesheet" href="style.css">
+<title>AM24:00</title>
 </head>
-
 <body>
-    <div id="contents">
-        <div class="top"><p class="inside">テスト</p><p class="outside">テスト</p></div>
-        <div class="member"><p class="inside">テスト</p><p class="outside">テスト</p></div>
-        <div class="novels"><p class="inside">テスト</p><p class="outside">テスト</p></div>
-        <div class="products"><p class="inside">テスト</p><p class="outside">テスト</p></div>
-        <div class="contacts"><p class="inside">テスト</p><p class="outside">テスト</p></div>
+<!-- ハンバーガーメニュー -->
+<input id="test" type="checkbox" />
+<label for="test">
+    <svg class="burger" width="86" height="60" viewbox="0 0 150 150">
+        <g stroke-width="12">   
+            <line x1="6" y1="6" x2="80" y2="6"></line>
+            <line x1="6" y1="28" x2="80" y2="28"></line>
+            <line x1="6" y1="50" x2="80" y2="50"> </line>
+        </g>
+    </svg>
+    <svg class="close" width="86" height="60" viewbox="0 0 150 150">
+        <g stroke-width="12">   
+            <line x1="42" y1="6" x2="42" y2="80"></line>
+            <line x1="6" y1="42" x2="80" y2="42"></line>
+        </g>
+    </svg>
+</label>
+<div class="menu">
+    <div><a href="#A_section">Home</a></div>
+    <div><a href="#M_section">Member</a></div>
+    <div><a href="#p24_section">Products</a></div>
+    <div><a href="#colon_section">Contact</a></div>
+</div>
 
+<!-- ハンバーガーメニュー -->
+
+<div id="contents">
+  <div id="A_section"> <div class="title_section"><img src="images/a_section.png"></div> 
+    <!-- background-imageで、book_bg.pngを背景画像に -->
+    <div class="book-bg">
+      <div class="introduction">
+        <p>こんにちは<br>
+          <br>
+          創作サークルAM24:00です。<br>
+          私たちは小説を専門に学んだ仲間で集まり、創作に熱中──中っ！<br>
+          文学フリマにも出展しており毎年、作品をみなさんに届けています。<br>
+          作家デビューを果たし、躍進中の「モンチ」さんを筆頭に<br>
+          並々ならぬ個性を持つ6人で活動中！<br>
+          <br>
+          よろしくお願いします！！<br>
+        </p>
+        <p class="left-font">AM24:00 HP担当　みと</p>
+      </div>
     </div>
+  </div>
+  <div id="M_section">
+    <div class="title_section"> <img src="images/m_section.png"> </div>
+    <!-- 一人め --> 
+    <!-- background-imageで、book_bg.pngを背景画像に -->
+    <div class="book-bg">
+      <div class="member-left">
+        <p>深夜が好きです。<br>
+          よろしくお願いします。</p>
+        <div class="C-icon"> <img src="images/member/c-shiomi.gif"> </div>
+      </div>
+      <div class="member-right"> <img src="images/illust/i-shiomi_03.jpg">
+        <div class="N-icon"> <img src="images/member/n-shiomi.png"> </div>
+      </div>
+    </div>
+    <!-- 二人め --> 
+    <!-- background-imageで、book_bg.pngを背景画像に -->
+    <div class="book-bg">
+      <div class="member-left">
+        <p>この小説に出会えて良かった！<br>
+          こんな小説を書いてみたい！<br>
+          読者にそう思ってもらえるような小説を書きたいと思っています！<br>
+          <br>
+          よろしくお願いします！<br>
+        </p>
+        <div class="C-icon"> <img src="images/member/c-monchi.gif"> </div>
+      </div>
+      <div class="member-right"> 
+        <!-- 小説抜粋 -->
+        <p></p>
+        <!-- 小説抜粋 -->
+        <div class="N-icon"> <img src="images/member/n-monchi.png"> </div>
+      </div>
+    </div>
+    <!-- 三人め --> 
+    <!-- background-imageで、book_bg.pngを背景画像に -->
+    <div class="book-bg">
+      <div class="member-left">
+        <p>音は料理における、付け合わせのマッシュポテトのように身近な存在。<br>
+          <br>
+          よろしくお願いします。<br>
+        </p>
+        <div class="C-icon"> <img src="images/member/c-otodonari.gif"> </div>
+      </div>
+      <div class="member-right"> <img src="images/illust/i-otodonari_03.jpg">
+        <div class="N-icon"> <img src="images/member/n-otodonari.png"> </div>
+      </div>
+    </div>
+    <!-- 四人め --> 
+    <!-- background-imageで、book_bg.pngを背景画像に -->
+    <div class="book-bg">
+      <div class="member-left">
+        <p>この原作小説、アニメより動いてんじゃん！と思われるような作品を書いていきます。<br>
+          目指せ、アニメーション小説！<br>
+   
+          <br>
+          よろしくお願いします！<br>
+        </p>
+        <div class="C-icon"> <img src="images/member/c-monogatari_anima.gif"> </div>
+      </div>
+      <div class="member-right"> 
+        <!-- 小説抜粋 -->
+        <p></p>
+        <!-- 小説抜粋 -->
+        <div class="N-icon"> <img src="images/member/n-monogatari_anima.png"> </div>
+      </div>
+    </div>
+    <!-- 五人め --> 
+    <!-- background-imageで、book_bg.pngを背景画像に -->
+    <div class="book-bg">
+      <div class="member-left">
+        <p>静岡認です。『感動できるライトノベル』を書くことが目標です。<br>
+          クリエイターを営むすべての方に敬意を抱きつつ、今日も頑張ります！<br>
+        </p>
+        <div class="C-icon"> <img src="images/member/c-shizuhara_nin.gif"> </div>
+      </div>
+      <div class="member-right"> 
+        <!-- 小説抜粋 -->
+        <p></p>
+        <!-- 小説抜粋 -->
+        <div class="N-icon"> <img src="images/member/n-shizuhara_nin.png"> </div>
+      </div>
+    </div>
+    <!-- 六人め --> 
+    <!-- background-imageで、book_bg.pngを背景画像に -->
+    <div class="book-bg">
+      <div class="member-left">
+        <p>折り紙で鶴を折るのが好きで、気づいたら折り鶴が群れを作っています。<br>
+          滝行したり礼儀作法を学んだり。小説は短編メインで執筆。<br>
+          <br>
+          よろしくお願いいたします。
+        </p>
+        <div class="C-icon"> <img src="images/member/c-mito.gif"> </div>
+      </div>
+      <div class="member-right"> 
+        <!-- 小説抜粋 -->
+        <p></p>
+        <!-- 小説抜粋 -->
+        <div class="N-icon"> <img src="images/member/n-mito.png"> </div>
+      </div>
+    </div>
+  </div>
+  <div id="p24_section" style="margin-top: 15vh;">
+    <div class="title_section"> <img src="images/24_section.png"> </div>
+    <div class="fukidashi"> <img src="images/novels_fukidashi.png"> </div>
+    <div class="name_table"> 
+      <!-- table以外のやり方で、メンバー表を作る --> 
+    </div>
+    <div class="book-bg">
+      <div class="novel_products"> 
+        <!-- 小説抜粋 -->
+        <p></p>
+        <!-- 小説抜粋 --> 
+      </div>
+      <div class="next">
+        <p><a href="">続きはこちら</a></p>
+      </div>
+    </div>
+
+    <div class="fukidashi"> <img src="images/illust_fukidashi.png"> </div>
+    <div class="name_table"> 
+      <!-- table以外のやり方で、メンバー表を作る --> 
+    </div>
+    <div class="illust_products">
+      <div class="illust-left"> 
+        <!-- イラスト載せる --> 
+      </div>
+      <div class="illust-right"> 
+        <!-- イラスト載せる --> 
+      </div>
+    </div>
+
+  </div>
+  <div id="colon_section">
+    <div class="title_section"> <img src="images/colon_section.png"> </div>
+    <div class="book-bg">
+      <div class="contact-left">
+        <p>作品についての感想は<br>
+          随時募集しております！<br>
+          <br>
+          また、お仕事についても、<br>
+          受け付けておりますので<br>
+          ぜひご連絡ください。<br>
+        </p>
+      </div>
+      <div class="contact-right">
+        <p>・シナリオ<br>
+          ・ライティング<br>
+          ・イラスト<br>
+          ・デザイン<br>
+          ・HP制作<br>
+          ・動画制作<br>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div id="contacts"> 
+    <!--フォーム埋め込み--> 
+    <strong><script src="https://sdk.form.run/js/v2/embed.js"></script>
+    <div
+class="formrun-embed"
+data-formrun-form="@privacy--1654071306"
+data-formrun-redirect="true"> </div>
+    </strong> </div>
+  <!--フォーム埋め込み--> 
+  <div id="sns">
+    <!-- <div class="zero"> <img src="images/sns_mask.png"> </div> -->
+            <!--twitter埋め込み--> 
+    <div class="twitter"> 
+      <a class="twitter-timeline" data-height="620px"	data-chrome=”noheader” data-chrome=”transparent” href="https://twitter.com/AM24002?ref_src=twsrc%5Etfw">Tweets by AM24002</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+    </div>
+  </div>
+  <footer>
+    <div class="footer"> 
+      <!--コピーライトを入れる--> 
+    </div>
+  </footer>
+</div>
 </body>
+</html>

@@ -1,0 +1,185 @@
+body{
+    width: 360px;
+    background-image: url(/images/polygon-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
+
+
+//ハンバーガーメニュー
+
+label {
+    position: absolute;
+    z-index: 1;
+}
+
+input {
+    display: none;
+}
+
+input:checked ~ label {
+    right: 0;
+}
+
+// burger
+////////////////////////////////////////////////
+.burger {
+    position: relative;
+    // top: 12px;
+    left: 280px;
+    cursor: pointer;
+}
+
+.burger g {
+    stroke: #757575;
+    transition: stroke 0.25s ease-in-out;    
+}
+
+.burger g:hover {
+    stroke: darken(#ff70ea, 20%);
+}
+
+input:checked ~ label .burger {
+    opacity: 0;
+}
+
+// close
+////////////////////////////////////////////////
+.close {
+    position: relative;
+    top: 24px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.close g:hover {
+    stroke: darken(#ffffff, 20%);
+}
+
+.close g {
+    stroke: #ffffff;
+    transition: stroke 0.25s ease-in-out;    
+}
+
+.close line {
+    transform-origin: 0%;
+}
+
+.close g {
+    transform: rotateZ(45deg);
+    transform-origin: 50%;
+}
+
+input:checked ~ label .close {
+    opacity: 1;
+}
+
+// menu
+////////////////////////////////////////////////
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: tomato;
+    transition: opacity 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input:checked ~ .menu {
+    opacity: 1;
+}
+
+.menu div {
+    margin-top: 50px;
+    transition: margin 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+input:checked ~ .menu div {
+    margin-top: 0px;
+}
+
+
+//ハンバーガーメニュー
+
+
+
+
+p{
+    font-size: 10px;
+}
+
+#A_section{
+    margin-top: 5vh;
+}
+#M_section{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+#p24_section{
+    margin-top: 15vh;
+    .fukidashi{
+        margin-top: 10vh;
+    }
+}
+.title_section{
+    margin-left:20px ;
+}
+#colon_section{
+    margin-top: 15vh;
+}
+
+.book-bg{
+    background-image: url(/images/book-bg.png);
+    background-repeat: no-repeat;
+    width: 344px;
+    height: 248px;
+    padding: 20px;
+    display: flex;
+    margin: 30px 0;
+    .next{
+        position: relative;
+        width: 100vw;
+        p{
+            position: absolute;
+            top: 230px;
+            right: 50px;
+        }
+    }
+    .member-left{
+        width: 150px;
+        position: relative;
+        .C-icon{
+            position: absolute;
+            top:100px;
+            left: -10px;
+        }
+    }
+    .contact-left{
+        width: 150px;
+    }
+    .member-right{
+        margin-left: 20px;
+        position: relative;
+        .N-icon{
+            position:absolute;
+            top:140px;
+            left: -10px;
+        }
+    }
+}
+#sns{
+    mask-image: url("/images/sns_mask.png");
+    mask-repeat: no-repeat;
+    padding: 40px 40px 50px 20px;
+    background-color: white;
+
+}
