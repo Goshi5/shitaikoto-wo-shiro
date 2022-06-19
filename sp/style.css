@@ -1,6 +1,6 @@
 body {
   width: 360px;
-  background-image: url(/images/polygon-bg.jpg);
+  background-image: url(images/polygon-bg.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -142,7 +142,7 @@ p {
 }
 
 .book-bg {
-  background-image: url(/images/book-bg.png);
+  background-image: url(images/book-bg.png);
   background-repeat: no-repeat;
   width: 344px;
   height: 248px;
@@ -191,8 +191,8 @@ p {
 }
 
 #sns {
-  -webkit-mask-image: url("/images/sns_mask.png");
-          mask-image: url("/images/sns_mask.png");
+  -webkit-mask-image: url("images/sns_mask.png");
+          mask-image: url("images/sns_mask.png");
   -webkit-mask-repeat: no-repeat;
           mask-repeat: no-repeat;
   padding: 40px 40px 50px 20px;
