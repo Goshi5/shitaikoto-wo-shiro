@@ -1,252 +1,208 @@
-@charset "utf-8";
-/*CSSで全体サイズなど決める*/
-@font-face {
-  font-family: 'Shippori Mincho B1', serif;
-  src: url('font/ShipporiMinchoB1-Bold.ttf') format('ttf');
-}
-/*ローディングアニメーション*/
-.loading {
-  width: 100vw;
-  height: 100vh;
-  transition: all 1s;
-  background-color: #FFF;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  opacity: 1;
-  visibility: visible;
-}
-
-.loading.is-active {
-  opacity: 0;
-  visibility: hidden;
-}
-
-.loading-animation {
-  width: 100vw;
-  height: 100vh;
-  transition: all 1s;
-  background-color: #20a3ea;
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  visibility: hidden;
-}
-
-.loading-animation.is-active {
-  opacity: 1;
-  visibility: visible;
-}
-/*ローディングアニメーション*/
-
-.titlefont{
- font-family: 'Lato', sans-serif;
-	font-weight: 100;
-	color: white;
-	background-color: black;
-	padding: 0 8px;
-	border-radius: 5px;
-}
-.myfont {
-  font-family: 'Shippori Mincho B1', serif;
-	font-weight: 600;	
-}
 body {
-  margin: 0;
-}
-#bg {
-  margin: 0;
-  height: 720px;
-  width: 100%;
-  min-height: 100vh;
-  /*max-width: 1200px;*/
-  place-items: center;
-  background-image: url("images/bg_pattern.png");
-  background-position: center x;
+  width: 360px;
+  background-image: url(images/polygon-bg.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-}
-#site-box {
-  width: 100%;
-  height: 720px;
-  background-image: url("images/bg.png");
-  background-size: cover;
-  text-align: right;
-  vertical-align: top;
-  margin: auto;
-  min-width: 1080px;
-  max-width: 1080px;
-  max-height: 720px;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-.vertical:not(.am24) {
-  -ms-writing-mode: tb-rl;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-  display: inline-block;
-  position: relative;
-  top: 120px;
-  right: 7%;
+  max-width: 100%;
   margin: 0 auto;
-	height: 510px;
-}
-.vertical .am24{
-	display: none;
-	writing-mode: horizontal-tb;
-	text-orientation: mixed;
-	  position: relative;
-	float: right;
-	right: 375px;
-	font-size: 2.5rem;
 }
 
-.vertical p {
-  text-align: left;
-  font-size: 1rem;
-  line-height: 2rem;
-  letter-spacing: 0.4rem;	
+.wrap {
+  overflow: hidden;
 }
-.vertical p a {
-  text-decoration: none;
-}
-.vertical .link-bk {
-  margin-right: 50px;
-  width: 225px;
-  height: auto;
-  background-image: url(images/link-bk.png);
-  background-size: auto;
-  background-position: 10px 85px;
-  background-repeat: no-repeat;
-}
-.vertical .link-bk p.myfont a {
-  color: black;
-  margin-top: 130px;
-}
-.vertical .link-bk p.myfont a:hover{
-background: #FFFFFF;
-background-size: 105%;
 
-}
-.vertical .title-img {
+label {
   position: absolute;
-  top: 360px;
-  left: 9px;
-transition: all 0.5s ease-in;
-}
-.vertical .title-img:hover{
-filter: brightness(110%);
-transform: scale(1.05);
-}
-.under-top {
-  padding: 60% 46%;
-}
-.A:hover{
-color: white;
-background-color: black;
-}
-.B:hover{
-color: white;
-background-color: black;
+  z-index: 1;
 }
 
-.C{
-	letter-spacing: 0.1rem!important;
+input {
+  display: none;
 }
-.C:hover{
-	color: white;
-	background-color: black;
+
+input:checked ~ label {
+  right: 0;
 }
-.D:hover{
-	color: white;
-	background-color: black;
+
+.burger {
+  position: relative;
+  left: 280px;
+  cursor: pointer;
 }
-.E:hover{
-	color: white;
-	background-color: black;
+
+.burger g {
+  stroke: #757575;
+  -webkit-transition: stroke 0.25s ease-in-out;
+  transition: stroke 0.25s ease-in-out;
 }
-.F:hover{
-	color: white;
-	background-color: black;
+
+.burger g:hover {
+  stroke: #ff0adb;
 }
-.G:hover{
-	color: white;
-	background-color: black;
+
+input:checked ~ label .burger {
+  opacity: 0;
 }
-.H:hover{
-	color: white;
-	background-color: black;
+
+.close {
+  position: relative;
+  top: 24px;
+  cursor: pointer;
+  opacity: 0;
 }
-.I:hover{
-	color: white;
-	background-color: black;
+
+.close g:hover {
+  stroke: #cccccc;
 }
-.J:hover{
-	color: white;
-	background-color: black;
+
+.close g {
+  stroke: #ffffff;
+  -webkit-transition: stroke 0.25s ease-in-out;
+  transition: stroke 0.25s ease-in-out;
 }
-.K:hover{
-	color: white;
-	background-color: black;
+
+.close line {
+  -webkit-transform-origin: 0%;
+          transform-origin: 0%;
 }
-.L:hover{
-	color: white;
-	background-color: black;
+
+.close g {
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+  -webkit-transform-origin: 50%;
+          transform-origin: 50%;
 }
-.M:hover{
-	color: white;
-	background-color: black;
+
+input:checked ~ label .close {
+  opacity: 1;
 }
-.N:hover{
-	color: white;
-	background-color: black;
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: absolute;
+  opacity: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: tomato;
+  -webkit-transition: opacity 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: opacity 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
 }
-.O:hover{
-	color: white;
-	background-color: black;
+
+input:checked ~ .menu {
+  opacity: 1;
 }
-.PQ{
-	-ms-text-combine-horizontal: all;
-	-webkit-text-combine: horizontal;
-	text-combine-upright: all;
-	position: absolute;
-	right: 18px;
+
+.menu div {
+  margin-top: 50px;
+  -webkit-transition: margin 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: margin 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-.PQ:hover{
-	color: white;
-	background-color: black;
+
+input:checked ~ .menu div {
+  margin-top: 0px;
 }
-.R{
-	margin-top: 1.4rem;
+
+p {
+  font-size: 10px;
 }
-.R:hover{
-	color: white;
-	background-color: black;
+
+#A_section {
+  margin-top: 5vh;
 }
-.S:hover{
-	color: white;
-	background-color: black;
+
+#M_section {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
 }
-.T:hover{
-	color: white;
-	background-color: black;
+
+#p24_section {
+  margin-top: 15vh;
 }
-.U:hover{
-	color: white;
-	background-color: black;
+
+#p24_section .fukidashi {
+  margin-top: 10vh;
 }
-.V{
-	letter-spacing: 0.1rem!important;	
+
+.title_section {
+  margin-left: 20px;
 }
-.V:hover{
-	color: white;
-	background-color: black;
+
+#colon_section {
+  margin-top: 15vh;
 }
-.W:hover{
-	color: white;
-	background-color: black;
+
+.book-bg {
+  background-image: url(images/book-bg.png);
+  background-repeat: no-repeat;
+  width: auto;
+  height: 248px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px 0;
 }
+
+.book-bg .next {
+  position: relative;
+  width: 100vw;
+}
+
+.book-bg .next p {
+  position: absolute;
+  top: 230px;
+  right: 50px;
+}
+
+.book-bg .member-left {
+  width: 150px;
+  position: relative;
+}
+
+.book-bg .member-left .C-icon {
+  position: absolute;
+  top: 100px;
+  left: -10px;
+}
+
+.book-bg .contact-left {
+  width: 150px;
+}
+
+.book-bg .member-right {
+  margin-left: 20px;
+  position: relative;
+}
+
+.book-bg .member-right .N-icon {
+  position: absolute;
+  top: 140px;
+  left: -10px;
+}
+
+#sns {
+  -webkit-mask-image: url("images/sns_mask.png");
+          mask-image: url("images/sns_mask.png");
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  padding: 40px 40px 50px 20px;
+  background-color: white;
+}
+/*# sourceMappingURL=style.css.map */
