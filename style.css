@@ -1,3 +1,7 @@
+* {
+  outline: 2px red solid;
+}
+
 body {
   width: 360px;
   background-image: url(images/polygon-bg.jpg);
@@ -10,6 +14,7 @@ body {
 
 .wrap {
   overflow: hidden;
+  padding-left: 8px;
 }
 
 label {
@@ -27,7 +32,7 @@ input:checked ~ label {
 
 .burger {
   position: relative;
-  left: 280px;
+  left: 274px;
   cursor: pointer;
 }
 
