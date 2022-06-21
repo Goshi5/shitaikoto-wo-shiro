@@ -1,3 +1,7 @@
+*{
+    outline: 2px red solid;
+}
+
 body{
     width: 360px;
     background-image: url(images/polygon-bg.jpg);
@@ -6,11 +10,11 @@ body{
     background-size: cover;
     // overflow: hidden;
     max-width:100%;
-    min-width:100%;
-    margin-left: 5vw;
+    margin: 0 auto;
 }
-#contents{
+.wrap{
     overflow: hidden;
+    padding-left: 8px;
 }
 
 //ハンバーガーメニュー
@@ -33,7 +37,7 @@ input:checked ~ label {
 .burger {
     position: relative;
     // top: 12px;
-    left: 280px;
+    left: 274px;
     cursor: pointer;
 }
 
