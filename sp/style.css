@@ -146,6 +146,22 @@ p {
   margin-top: 10vh;
 }
 
+#p24_section .name_table ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 0;
+}
+
+#p24_section .name_table ul li {
+  width: 50%;
+  border: 1px;
+  text-align: center;
+}
+
 .title_section {
   margin-left: 20px;
 }
@@ -212,6 +228,24 @@ p {
   position: absolute;
   top: 140px;
   left: -10px;
+}
+
+.book-bg .illust_products {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.book-bg .illust_products .illust-left {
+  position: relative;
+}
+
+.book-bg .illust_products .illust-right {
+  position: relative;
+  margin-left: 30px;
 }
 
 #sns {
