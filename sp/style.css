@@ -147,7 +147,7 @@ p {
   margin-top: 10vh;
 }
 
-#p24_section .name_table-novel ul {
+#p24_section .name_table_novel ul {
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -157,13 +157,13 @@ p {
   padding-left: 0;
 }
 
-#p24_section .name_table-novel ul li {
+#p24_section .name_table_novel ul li {
   width: 50%;
   border: 1px;
   text-align: center;
 }
 
-#p24_section .name_table-illust ul {
+#p24_section .name_table_illust ul {
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -173,7 +173,7 @@ p {
   padding-left: 0;
 }
 
-#p24_section .name_table-illust ul li {
+#p24_section .name_table_illust ul li {
   width: 50%;
   border: 1px;
   text-align: center;
@@ -206,7 +206,7 @@ p {
   top: 450px;
 }
 
-.book-bg .panel-group .novel_products {
+.book-bg .novel_products .panel-group {
   overflow-y: scroll;
   width: 100%;
   height: 185px;

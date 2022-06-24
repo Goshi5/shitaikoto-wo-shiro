@@ -20,15 +20,31 @@ function changeTwitterWidgetDesign(){
   changeTwitterWidgetDesign();
 
 // タブ切り替え
-  jQuery(function($){
-    $('.tab').click(function(){
-      $('.is-active').removeClass('is-active');
+jQuery(function($){
+  $('.tab').click(function(){
+      // クリックした要素の先祖要素の中で、classの値がname_table_novelの要素を取得
+      const name_table_novel = $(this).parents('.name_table_novel'); 
+      name_table_novel.find('.is-active').removeClass('is-active');
       $(this).addClass('is-active');
-      $('.is-show').removeClass('is-show');
-          // クリックしたタブからインデックス番号を取得
+      name_table_novel.find('.is-show').removeClass('is-show');
+      // クリックしたタブからインデックス番号を取得
       const index = $(this).index();
-          // クリックしたタブと同じインデックス番号をもつコンテンツを表示
-      $('.panel').eq(index).addClass('is-show');
-    });
-  });  
+      // クリックしたタブと同じインデックス番号をもつコンテンツを表示
+      name_table_novel.find(".panel").eq(index).addClass('is-show');
+  });
+});
+
+jQuery(function($){
+  $('.tab').click(function(){
+      // クリックした要素の先祖要素の中で、classの値がname_table_illustの要素を取得
+      const name_table_illust = $(this).parents('.name_table_illust'); 
+      name_table_illust.find('.is-active').removeClass('is-active');
+      $(this).addClass('is-active');
+      name_table_illust.find('.is-show').removeClass('is-show');
+      // クリックしたタブからインデックス番号を取得
+      const index = $(this).index();
+      // クリックしたタブと同じインデックス番号をもつコンテンツを表示
+      name_table_illust.find(".panel").eq(index).addClass('is-show');
+  });
+});
 // タブ切り替え  
