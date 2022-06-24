@@ -147,7 +147,7 @@ p {
   margin-top: 10vh;
 }
 
-#p24_section .name_table ul {
+#p24_section .name_table-novel ul {
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -157,7 +157,23 @@ p {
   padding-left: 0;
 }
 
-#p24_section .name_table ul li {
+#p24_section .name_table-novel ul li {
+  width: 50%;
+  border: 1px;
+  text-align: center;
+}
+
+#p24_section .name_table-illust ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 0;
+}
+
+#p24_section .name_table-illust ul li {
   width: 50%;
   border: 1px;
   text-align: center;
@@ -190,7 +206,7 @@ p {
   top: 450px;
 }
 
-.book-bg .novel_products {
+.book-bg .panel-group .novel_products {
   overflow-y: scroll;
   width: 100%;
   height: 185px;
@@ -256,7 +272,7 @@ p {
 
 .next p {
   position: absolute;
-  right: 130px;
+  right: 9vw;
 }
 
 #sns {
@@ -277,5 +293,47 @@ p {
 .footer p {
   color: white;
   text-align: center;
+}
+
+.tab-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tab {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 5px;
+  list-style: none;
+  border: solid 1px #CCC;
+  text-align: center;
+  cursor: pointer;
+}
+
+.panel-group {
+  height: 100px;
+  border: solid 1px #CCC;
+  border-top: none;
+  background: #eee;
+}
+
+.panel {
+  display: none;
+}
+
+.tab.is-active {
+  background: #F00;
+  color: #FFF;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.panel.is-show {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */
