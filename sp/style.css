@@ -3,18 +3,19 @@
 }
 
 body {
-  width: 345px;
-  height: auto;
   background-image: url(images/polygon-bg.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  max-width: 100%;
-  margin: 0 auto;
 }
 
 .wrap {
   overflow: hidden;
+  width: 345px;
+  height: auto;
+  max-width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 label {
@@ -184,53 +185,51 @@ p {
 
 .book-bg .introduction p.right-font {
   text-align: right;
-}
-
-.book-bg .next {
-  position: relative;
-  width: 100vw;
-}
-
-.book-bg .next p {
   position: absolute;
-  top: 230px;
-  right: 50px;
+  right: 67px;
+  top: 450px;
 }
 
-.book-bg .member-left {
+.book-bg .novel_products {
+  overflow-y: scroll;
+  width: 100%;
+  height: 185px;
+}
+
+.member-left {
   width: 150px;
   position: relative;
 }
 
-.book-bg .member-left .C-icon {
+.member-left .C-icon {
   position: absolute;
   top: 100px;
   left: -10px;
 }
 
-.book-bg .contact-left {
+.contact-left {
   width: 150px;
   padding-left: 10px;
   padding-top: 20px;
 }
 
-.book-bg .contact-right {
+.contact-right {
   padding-left: 20px;
   padding-top: 20px;
 }
 
-.book-bg .member-right {
+.member-right {
   margin-left: 20px;
   position: relative;
 }
 
-.book-bg .member-right .N-icon {
+.member-right .N-icon {
   position: absolute;
   top: 140px;
   left: -10px;
 }
 
-.book-bg .illust_products {
+.illust_products {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -239,13 +238,25 @@ p {
       flex-wrap: wrap;
 }
 
-.book-bg .illust_products .illust-left {
+.illust_products .illust-left {
   position: relative;
 }
 
-.book-bg .illust_products .illust-right {
+.illust_products .illust-right {
   position: relative;
   margin-left: 30px;
+}
+
+.next {
+  position: relative;
+  width: 100vw;
+  height: 4vh;
+  margin-top: -30px;
+}
+
+.next p {
+  position: absolute;
+  right: 130px;
 }
 
 #sns {
